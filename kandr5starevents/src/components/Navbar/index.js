@@ -16,7 +16,7 @@ const Navbar = () => {
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to="/">kandr</NavLogo>
+          <NavLogo to="/">K and R 5 Star Events</NavLogo>
           <MobileIcon>
             <FaBars />
           </MobileIcon>

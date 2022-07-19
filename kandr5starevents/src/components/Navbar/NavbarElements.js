@@ -3,9 +3,11 @@ import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
-  background: #000;
+  /* purple color pallet */
+  /* Scroll function changes navbar from transparent to black *passed to Navbar/index.js * */
+  background: ${({ scrollNav }) => (scrollNav ? "#7f1cd6" : "transparent")};
   height: 80px;
-  /* margin-top: -80px; */
+  margin-top: -80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,6 +15,10 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 10;
+
+  @media screen and (max-width: 960px) {
+    transition: 0.8s all ease;
+  }
 `;
 
 export const NavbarContainer = styled.div`
@@ -39,6 +45,19 @@ export const NavLogo = styled(LinkR)`
 
 export const MobileIcon = styled.div`
   display: none;
+
+  @media screen and (max-width: 768px) {
+    display: block;
+    /*  An absolutely positioned element is an element whose computed position value is absolute or fixed */
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* transform repositions an element in the horizontal and/or vertical directions */
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #fff;
+  }
 `;
 
 export const NavMenu = styled.ul`
@@ -47,6 +66,10 @@ export const NavMenu = styled.ul`
   list-style: none;
   text-align: center;
   margin-right: -22px;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const NavItem = styled.li`
