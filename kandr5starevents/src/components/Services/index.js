@@ -41,7 +41,7 @@ const Services = () => {
             </ServicesP>
           </ServicesCard>
           <ServicesCard>
-            <ServicesIcon src={Icon2} />
+            <ServicesIcon src={Icon3} />
             <ServicesH2>Graduations</ServicesH2>
             <ServicesP>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore
