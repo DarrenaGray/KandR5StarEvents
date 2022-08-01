@@ -9,7 +9,7 @@ import {
   TextWrapper,
   TopLine,
   Heading,
-  SubTitle,
+  Subtitle,
   ImgWrap,
   Img,
 } from "./InfoElements";
@@ -22,22 +22,25 @@ const InfoSection = ({
   imgStart,
   img,
   alt,
+  lightBg,
+  lightText,
+  darkText,
 }) => {
   return (
     <>
-      <InfoContainer>
+      <InfoContainer lightBg={lightBg} id={id}>
         <InfoWrapper>
-          <InfoRow>
+          <InfoRow imgStart={imgStart}>
             <Column1>
               <TextWrapper>
-                <TopLine></TopLine>
-                <Heading></Heading>
-                <SubTitle></SubTitle>
+                <TopLine>{topLine}</TopLine>
+                <Heading lightText={lightText}>{headLine}</Heading>
+                <Subtitle darkText={darkText}>{description}</Subtitle>
               </TextWrapper>
             </Column1>
             <Column2>
               <ImgWrap>
-                <Img />
+                <Img src={img} alt={alt} />
               </ImgWrap>
             </Column2>
           </InfoRow>
