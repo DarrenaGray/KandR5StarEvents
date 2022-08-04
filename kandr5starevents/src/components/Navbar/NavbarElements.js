@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Link as LinkR } from "react-router-dom";
+// import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
@@ -32,6 +32,7 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavLogo = styled.img`
+  /* Changed from styled(LinkR) to styled.img because logo image would not render */
   color: #fff;
   justify-self: flex-start;
   cursor: pointer;
