@@ -4,6 +4,10 @@ export const InfoContainer = styled.div`
   /* background-color: #eebcb3; */
   background: ${({ lightBg }) => (lightBg ? "#f9f9f9" : "#eebcb3")};
   color: #fff;
+
+  @media screen and (max-width: 768px) {
+    padding: 100px 0;
+  }
 `;
 
 export const InfoWrapper = styled.div`
