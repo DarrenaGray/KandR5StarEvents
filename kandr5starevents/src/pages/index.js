@@ -4,7 +4,11 @@ import Navbar from "../components/Navbar";
 import Services from "../components/Services";
 import InfoSection from "../components/InfoSection";
 import Sidebar from "../components/Sidebar";
-import { homeObjOne, homeObjTwo, homeObjThree } from "../InfoSection/Data";
+import {
+  homeObjOne,
+  homeObjTwo,
+  homeObjThree,
+} from "../components/InfoSection/Data";
 import Footer from "../components/Footer";
 
 const Home = () => {
