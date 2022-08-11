@@ -41,7 +41,7 @@ const Navbar = ({ toggle }) => {
     <>
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
-          <NavLogo to="/" src={Logo} alt="logo"></NavLogo>
+          <NavLogo to="/" onClick={toggleHome} src={Logo} alt="logo"></NavLogo>
 
           <MobileIcon onClick={toggle}>
             <FaBars />
@@ -51,7 +51,7 @@ const Navbar = ({ toggle }) => {
               {/* spy tells you what you're clicking on */}
               {/* offset is set to the same value as margin-top of Nav in NavbarElements in order to match up scroll exactly when link scroll changes */}
               <NavLinks
-                to=""
+                to="/"
                 smooth={true}
                 duration={500}
                 spy={true}
