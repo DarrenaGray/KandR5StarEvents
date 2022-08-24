@@ -1,0 +1,47 @@
+export const homeObjOne = {
+  id: "home",
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: true,
+  topLine: "Who We Are",
+  headLine: "K & R Events",
+  description: "Provides you with services that makes every event special",
+  imgStart: false,
+  img: require("../images/Headshot.jpg"),
+  alt: "portrait",
+  dark: false,
+  primary: true,
+  darkText: true,
+};
+
+export const homeObjTwo = {
+  id: "about",
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: true,
+  topLine: "",
+  headLine: "Weddings",
+  description: "All Your Of Wedding Needs For Your Special Day",
+  imgStart: true,
+  img: require("../images/Flowers.jpg"),
+  alt: "portrait",
+  dark: true,
+  primary: true,
+  darkText: true,
+};
+
+export const homeObjThree = {
+  id: "services",
+  lightBg: false,
+  lightText: true,
+  lightTextDesc: true,
+  topLine: "",
+  headLine: "Graduations",
+  description: "Celebrate Your Graduate In Style",
+  imgStart: false,
+  img: require("../images/Gradimages.jpg"),
+  alt: "portrait",
+  dark: false,
+  primary: true,
+  darkText: true,
+};

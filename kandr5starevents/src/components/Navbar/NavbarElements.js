@@ -1,11 +1,11 @@
 import styled from "styled-components";
-import { Link as LinkR } from "react-router-dom";
+// import { Link as LinkR } from "react-router-dom";
 import { Link as LinkS } from "react-scroll";
 
 export const Nav = styled.nav`
   /* purple color pallet */
   /* Scroll function changes navbar from transparent to black *passed to Navbar/index.js * */
-  background: ${({ scrollNav }) => (scrollNav ? "#7f1cd6" : "transparent")};
+  background: ${({ scrollNav }) => (scrollNav ? "#000" : "transparent")};
   height: 80px;
   margin-top: -80px;
   display: flex;
@@ -31,7 +31,8 @@ export const NavbarContainer = styled.div`
   max-width: 1100px;
 `;
 
-export const NavLogo = styled(LinkR)`
+export const NavLogo = styled.img`
+  /* Changed from styled(LinkR) to styled.img because logo image would not render */
   color: #fff;
   justify-self: flex-start;
   cursor: pointer;
@@ -41,6 +42,8 @@ export const NavLogo = styled(LinkR)`
   margin-left: 24px;
   font-weight: bold;
   text-decoration: none;
+  height: 80px;
+  width: 100px;
 `;
 
 export const MobileIcon = styled.div`
@@ -84,4 +87,22 @@ export const NavLinks = styled(LinkS)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
+
+  &.active {
+    border-bottom: 3px solid #eebcb3;
+  }
+
+  &:hover {
+    color: #eebcb3;
+    transition: 0.2s ease-in-out;
+  }
+`;
+
+export const NavBtn = styled.nav`
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
