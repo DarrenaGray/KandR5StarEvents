@@ -1,5 +1,5 @@
 export const homeObjOne = {
-  id: "home",
+  id: "about",
   lightBg: true,
   lightText: false,
   lightTextDesc: true,
@@ -7,7 +7,7 @@ export const homeObjOne = {
   headLine: "K & R Events",
   description: "Provides you with services that makes every event special",
   imgStart: false,
-  img: require("../images/Headshot.jpg"),
+  img: require("../../images/Headshot.jpg"),
   alt: "portrait",
   dark: false,
   primary: true,
@@ -15,7 +15,7 @@ export const homeObjOne = {
 };
 
 export const homeObjTwo = {
-  id: "about",
+  id: "Services",
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
@@ -23,7 +23,7 @@ export const homeObjTwo = {
   headLine: "Weddings",
   description: "All Your Of Wedding Needs For Your Special Day",
   imgStart: true,
-  img: require("../images/Flowers.jpg"),
+  img: require("../../images/Flowers.jpg"),
   alt: "portrait",
   dark: true,
   primary: true,
@@ -31,7 +31,7 @@ export const homeObjTwo = {
 };
 
 export const homeObjThree = {
-  id: "services",
+  id: "contact",
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
@@ -39,7 +39,7 @@ export const homeObjThree = {
   headLine: "Graduations",
   description: "Celebrate Your Graduate In Style",
   imgStart: false,
-  img: require("../images/Gradimages.jpg"),
+  img: require("../../images/Gradimages.jpg"),
   alt: "portrait",
   dark: false,
   primary: true,

@@ -51,12 +51,13 @@ const Navbar = ({ toggle }) => {
               {/* spy tells you what you're clicking on */}
               {/* offset is set to the same value as margin-top of Nav in NavbarElements in order to match up scroll exactly when link scroll changes */}
               <NavLinks
-                to="home"
+                to="/"
                 smooth={true}
                 duration={500}
                 spy={true}
                 exact="true"
                 offset={-80}
+                onClick={toggleHome}
               >
                 Home
               </NavLinks>
