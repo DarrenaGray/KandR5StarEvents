@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-import { animateScroll as scroll } from "react-scroll";
+import React, { useState } from "react";
+// import { animateScroll as scroll } from "react-scroll";
 
 import HeroSection from "../components/HeroSection";
 import Navbar from "../components/Navbar";
@@ -12,6 +12,7 @@ import {
   homeObjThree,
 } from "../components/InfoSection/Data";
 import Footer from "../components/Footer";
+import Gallery from "../components/Gallery";
 
 const Home = () => {
   // States whether mobile icon is open or closed
@@ -21,26 +22,26 @@ const Home = () => {
     setIsOpen(!isOpen);
   };
 
-  // ---
-  const [scrollNav, setScrollNav] = useState(false);
+  // // ---
+  // const [scrollNav, setScrollNav] = useState(false);
 
-  const changeNav = () => {
-    // On scroll if the navbar is >= 80px then the navbar is black else its transparent
-    if (window.scrollY >= 80) {
-      setScrollNav(true);
-    } else {
-      setScrollNav(false);
-    }
-  };
+  // const changeNav = () => {
+  //   // On scroll if the navbar is >= 80px then the navbar is black else its transparent
+  //   if (window.scrollY >= 80) {
+  //     setScrollNav(true);
+  //   } else {
+  //     setScrollNav(false);
+  //   }
+  // };
 
-  // To prevent erratic behvior when scrolling
-  useEffect(() => {
-    window.addEventListener("scroll", changeNav);
-  }, []);
+  // // To prevent erratic behvior when scrolling
+  // useEffect(() => {
+  //   window.addEventListener("scroll", changeNav);
+  // }, []);
 
-  const toggleHome = () => {
-    scroll.scrollToTop();
-  };
+  // const toggleHome = () => {
+  //   scroll.scrollToTop();
+  // };
 
   return (
     <>
@@ -48,8 +49,10 @@ const Home = () => {
       <Navbar toggle={toggle} />
       <HeroSection />
       <InfoSection {...homeObjOne} />
-      <InfoSection {...homeObjTwo} />
-      <Services scrollNav={scrollNav} toggle={toggle} toggleHome={toggleHome} />
+      {/* <InfoSection {...homeObjTwo} /> */}
+
+      <Services toggle={toggle} />
+      <Gallery />
       <InfoSection {...homeObjThree} />
       <Footer />
     </>

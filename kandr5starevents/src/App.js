@@ -6,9 +6,9 @@ import Home from "./pages";
 
 const App = () => {
   // Makes it so the page goes to the top of page on refresh
-  useEffect(() => {
-    window.history.scrollRestoration = "manual";
-  }, []);
+  // useEffect(() => {
+  //   window.history.scrollRestoration = "manual";
+  // }, []);
 
   return (
     <Router>
