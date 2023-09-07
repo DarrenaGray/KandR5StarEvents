@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/darrenagray.github.io/KandR5StarEvents/static/css/main.dd2aa1a6.css",
+    "main.js": "/darrenagray.github.io/KandR5StarEvents/static/js/main.288860fe.js",
+    "static/media/video2.mp4": "/darrenagray.github.io/KandR5StarEvents/static/media/video2.add1ae896e5529b4fba3.mp4",
+    "static/media/Gradimages.jpg": "/darrenagray.github.io/KandR5StarEvents/static/media/Gradimages.f266add64141d5a74fe0.jpg",
+    "static/media/Headshot.jpg": "/darrenagray.github.io/KandR5StarEvents/static/media/Headshot.3add4666fca7698d3a12.jpg",
+    "static/media/krblsqfab.jpg": "/darrenagray.github.io/KandR5StarEvents/static/media/krblsqfab.ec0dec077c406fa9391a.jpg",
+    "static/media/Birthday.jpg": "/darrenagray.github.io/KandR5StarEvents/static/media/Birthday.a136a5097d058a54a1b1.jpg",
+    "static/media/bride.jpg": "/darrenagray.github.io/KandR5StarEvents/static/media/bride.d5705a1b8fd48bc174a7.jpg",
+    "static/media/Flowers.jpg": "/darrenagray.github.io/KandR5StarEvents/static/media/Flowers.c63e76e8d8a96e762a68.jpg",
+    "index.html": "/darrenagray.github.io/KandR5StarEvents/index.html",
+    "main.dd2aa1a6.css.map": "/darrenagray.github.io/KandR5StarEvents/static/css/main.dd2aa1a6.css.map",
+    "main.288860fe.js.map": "/darrenagray.github.io/KandR5StarEvents/static/js/main.288860fe.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dd2aa1a6.css",
+    "static/js/main.288860fe.js"
+  ]
+}
